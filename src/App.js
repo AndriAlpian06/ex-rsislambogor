@@ -4,6 +4,7 @@ import Footer from './components/Footer';
 import Hero from './components/Hero';
 import Navbar from './components/Navbar';
 import Notice from './components/Notice';
+import Service from './components/Service';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Hero />
       <Notice />
       <Article />
+      <Service />
       <Footer />
     </>
   );
