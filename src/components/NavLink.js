@@ -1,6 +1,18 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 export default function NavLink({className, href, children}) {
+
+  const [color, setColor] = useState(false)
+      const changeColor = () => {
+        if (window.scrollY >= 90){
+            setColor(true)
+        }else{
+            setColor(false)
+        }
+    }
+
+    window.addEventListener('scroll', changeColor)
+
   return (
     <a href={href} 
         className={`${

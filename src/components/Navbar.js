@@ -22,7 +22,7 @@ const Navbar = () => {
     window.addEventListener('scroll', changeColor)
 
   return (
-    <div className={color ? 'fixed w-full bg-gradient-to-br from-green-900 to-green-900 z-10' : 'w-full absolute z-10'}>
+    <div className={color ? 'fixed w-full bg-white z-10 border-2 border-white border-b-green-600' : 'w-full absolute z-10'}>
         <MobileNavbar />
         <div className="hidden lg:block py-4">
             <div className="container">
@@ -33,7 +33,7 @@ const Navbar = () => {
                     <div className="flex items-center gap-x-4">    
                         <NavLink>BERANDA</NavLink>
                         <Menu className='relative' as={'div'}>
-                            <Menu.Button className='flex items-center gap-x-2 text-white'>
+                            <Menu.Button className={color ? 'flex items-center gap-x-2 text-black' : 'flex items-center gap-x-2 text-white'}>
                             PROFIL
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4">
                                     <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
@@ -76,7 +76,7 @@ const Navbar = () => {
                             </Transition>
                         </Menu>
                         <Menu className='relative' as={'div'}>
-                            <Menu.Button className='flex items-center gap-x-2 text-white'>
+                            <Menu.Button className={color ? 'flex items-center gap-x-2 text-black' : 'flex items-center gap-x-2 text-white'}>
                             PELAYANAN
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4">
                                     <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
@@ -107,7 +107,7 @@ const Navbar = () => {
                             </Transition>
                         </Menu>
                         <Menu className='relative' as={'div'}>
-                            <Menu.Button className='flex items-center gap-x-2 text-white'>
+                            <Menu.Button className={color ? 'flex items-center gap-x-2 text-black' : 'flex items-center gap-x-2 text-white'}>
                             JADWAL DOKTER
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4">
                                     <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
@@ -151,7 +151,7 @@ const Navbar = () => {
                         </Menu>
                         <NavLink>ARTIKEL</NavLink>
                         <Menu className='relative' as={'div'}>
-                            <Menu.Button className='flex items-center gap-x-2 text-white'>
+                            <Menu.Button className={color ? 'flex items-center gap-x-2 text-black' : 'flex items-center gap-x-2 text-white'}>
                             MITRA
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4">
                                     <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
@@ -184,7 +184,7 @@ const Navbar = () => {
                         <NavLink>GALLERY</NavLink>
                         <NavLink>DOWNLOAD</NavLink>
                         <Menu className='relative' as={'div'}>
-                            <Menu.Button className='flex items-center gap-x-2 text-white'>
+                            <Menu.Button className={color ? 'flex items-center gap-x-2 text-black' : 'flex items-center gap-x-2 text-white'}>
                             KONTAK
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4">
                                     <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />

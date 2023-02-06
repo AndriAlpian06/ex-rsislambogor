@@ -1,11 +1,19 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Element } from 'react-scroll'
 
-export default function 
-() {
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+export default function () {
+
+    useEffect(() => {
+        AOS.init();
+        AOS.refresh();
+      }, []);
+
   return (
     <>
-        <div className='my-8 px-8'>
+        <div className='my-8 px-8' data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="3000">
             <h1 className='text-2xl font-bold ml-28'>Artikel Terkini</h1>
             <Element name="test7" className="element px-4" id="containerElement" style={{
                 height: '450px',
