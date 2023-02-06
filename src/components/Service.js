@@ -3,41 +3,55 @@ import React from 'react'
 export default function Service() {
   return (
     <div>
-        {/* <div className='grid grid-cols-4 gap-2'>
+        {/* <div classNameName='grid grid-cols-4 gap-2'>
             <div>
-                <img src='https://www.rsislambogor.or.id/tinymcpuk/gambar/images/perpus%20online.JPG' className='w-20' alt='' />
+                <img src='https://www.rsislambogor.or.id/tinymcpuk/gambar/images/perpus%20online.JPG' classNameName='w-20' alt='' />
             </div>
             <div>
-                <img src='https://www.rsislambogor.or.id/tinymcpuk/gambar/images/Untitled.jpg' className='w-20' alt='' />
+                <img src='https://www.rsislambogor.or.id/tinymcpuk/gambar/images/Untitled.jpg' classNameName='w-20' alt='' />
             </div>
             <div>
-                <img src='https://www.rsislambogor.or.id/tinymcpuk/gambar/images/simrs%20online.JPG' className='w-20' alt='' />
+                <img src='https://www.rsislambogor.or.id/tinymcpuk/gambar/images/simrs%20online.JPG' classNameName='w-20' alt='' />
             </div>
             <div>
-                <img src='https://www.rsislambogor.or.id/tinymcpuk/gambar/images/sipnap.JPG' className='w-20' alt='' />
+                <img src='https://www.rsislambogor.or.id/tinymcpuk/gambar/images/sipnap.JPG' classNameName='w-20' alt='' />
             </div>
         </div> */}
-        <div className="mx-auto max-w-2xl py-2 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
-            <div className="grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-4 lg:gap-x-8">
-                {/* {clients.map((client) => (
-                    <div key={client.id}>
-                    <img
-                        src={client.imageSrc}
-                        alt={client.imageAlt}
-                    />
-                    </div>
-                ))} */}
-                <div className='px-16'>
-                    <a href='http://www.perpustakaan.depkes.go.id/' target='_blank' ><img src='https://www.rsislambogor.or.id/tinymcpuk/gambar/images/perpus%20online.JPG' className='w-full' alt='' /></a>
+        <div className="w-5/6 py-8 mx-auto px-6">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div className="bg-blue-900 px-8 py-8 text-white space-y-4 rounded-lg">
+                <h1 className="font-bold text-3xl">Jam Buka</h1>
+                <div className="flex justify-between">
+                    <p>Mon - Fri</p>
+                    <p>08:00am - 9:00pm</p>
                 </div>
-                <div className='px-16'>
-                    <a href='http://www.infopenyakit.org/' target='_blank' ><img src='https://www.rsislambogor.or.id/tinymcpuk/gambar/images/Untitled.jpg' className='w-full' alt='' /></a>
+                <div className="flex justify-between">
+                    <p>Saturday</p>
+                    <p>08:00am - 7:00pm</p>
                 </div>
-                <div className='px-16'>
-                    <a href='http://202.70.136.52/sirs/login.php' target='_blank'><img src='https://www.rsislambogor.or.id/tinymcpuk/gambar/images/simrs%20online.JPG' className='w-full' alt='' /></a>
+                <div className="flex justify-between">
+                    <p>Sunday</p>
+                    <p>08:00am - 5:00pm</p>
                 </div>
-                <div className='px-16'>
-                    <a href='http://sipnap.binfar.depkes.go.id/login.php' target='_blank'><img src='https://www.rsislambogor.or.id/tinymcpuk/gambar/images/sipnap.JPG' className='w-full' alt='' /></a>
+                <button className="w-full bg-white text-black rounded-sm py-2 hover:bg-green-700 hover:text-white">Janji Temu</button>
+                </div>
+                <div className="bg-green-900 px-8 py-8 text-white space-y-4 rounded-lg">
+                <h1 className="font-bold text-3xl">Cari Seorang Dokter</h1>
+                <form action="" className="space-y-4">
+                    <input type="date" name="" className="w-full text-black rounded-md py-2 px-4" placeholder=""/>
+                    <select name="pelayanan" id="" className="w-full py-2 rounded-md text-black px-4">
+                    <option value="" className="text-black">Pilih Layanan</option>
+                    <option value="" className="text-black">Layanan 1</option>
+                    <option value="" className="text-black">Layanan 2</option>
+                    <option value="" className="text-black">Layanan 3</option>
+                    </select>
+                </form>
+                <button className="w-full bg-white text-black rounded-sm py-2 hover:bg-green-700 hover:text-white">Cari Dokter</button>
+                </div>
+                <div className="bg-gray-500 px-8 py-8 text-white space-y-4 rounded-lg">
+                <h1 className="font-bold text-3xl">Nomor Darurat</h1>
+                <p>Ipsum erat ipsum dolor clita rebum no rebum dolores labore, ipsum magna at eos et eos amet.</p>
+                <h1 className="font-bold text-3xl">0251 - 831 - 16822</h1>
                 </div>
             </div>
         </div>
