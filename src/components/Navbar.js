@@ -1,9 +1,9 @@
 import { Menu, Transition } from '@headlessui/react'
 import React, { Fragment, useState } from 'react'
-import Logo from '../images/logo-rsislam.png'
+import Logo from '../assets/images/logo-rsislam.png'
 import DropdownLink from './DropdownLink'
 import MobileNavbar from './MobileNavbar'
-import NavLink from './NavLink'
+// import NavLink from './NavLink'
 
 import '../css/search.css'
 import Line from './Line'
@@ -31,7 +31,8 @@ const Navbar = () => {
                         <a href="/" className="text-white font-medium"><img src={Logo} className='w-16 h-[55px] ml-4' alt='Logo'></img></a>
                     </div>
                     <div className="flex items-center gap-x-4">    
-                        <NavLink>BERANDA</NavLink>
+                        <a href='#' className={color ? 'md:text-sm font-medium lg:text-tiny px-4 py-2 text-black hover:text-white hover:bg-green-700 rounded-lg' : 'md:text-sm font-medium lg:text-tiny px-4 py-2 text-white hover:text-white hover:bg-green-700 rounded-lg'}>BERANDA</a>
+                        {/* <NavLink>BERANDA</NavLink> */}
                         <Menu className='relative' as={'div'}>
                             <Menu.Button className={color ? 'flex items-center gap-x-2 text-black' : 'flex items-center gap-x-2 text-white'}>
                             PROFIL
@@ -149,7 +150,8 @@ const Navbar = () => {
                                 </Menu.Items>
                             </Transition>
                         </Menu>
-                        <NavLink>ARTIKEL</NavLink>
+                        {/* <NavLink>ARTIKEL</NavLink> */}
+                        <a href='#' className={color ? 'md:text-sm font-medium lg:text-tiny px-4 py-2 text-black hover:text-white hover:bg-green-700 rounded-lg' : 'md:text-sm font-medium lg:text-tiny px-4 py-2 text-white hover:text-white hover:bg-green-700 rounded-lg'}>ARTIKEL</a>
                         <Menu className='relative' as={'div'}>
                             <Menu.Button className={color ? 'flex items-center gap-x-2 text-black' : 'flex items-center gap-x-2 text-white'}>
                             MITRA
@@ -181,8 +183,10 @@ const Navbar = () => {
                                 </Menu.Items>
                             </Transition>
                         </Menu>
-                        <NavLink>GALLERY</NavLink>
-                        <NavLink>DOWNLOAD</NavLink>
+                        {/* <NavLink>GALLERY</NavLink> */}
+                        <a href='#' className={color ? 'md:text-sm font-medium lg:text-tiny px-4 py-2 text-black hover:text-white hover:bg-green-700 rounded-lg' : 'md:text-sm font-medium lg:text-tiny px-4 py-2 text-white hover:text-white hover:bg-green-700 rounded-lg'}>GALLERY</a>
+                        {/* <NavLink>DOWNLOAD</NavLink> */}
+                        <a href='#' className={color ? 'md:text-sm font-medium lg:text-tiny px-4 py-2 text-black hover:text-white hover:bg-green-700 rounded-lg' : 'md:text-sm font-medium lg:text-tiny px-4 py-2 text-white hover:text-white hover:bg-green-700 rounded-lg'}>DOWNLOAD</a>
                         <Menu className='relative' as={'div'}>
                             <Menu.Button className={color ? 'flex items-center gap-x-2 text-black' : 'flex items-center gap-x-2 text-white'}>
                             KONTAK

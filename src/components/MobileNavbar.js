@@ -1,18 +1,31 @@
 import { Menu, Transition } from '@headlessui/react'
-import React, { Fragment } from 'react'
+import React, { Fragment, useState } from 'react'
 import Line from './Line'
-import Logo from '../images/logo-rsislam.png'
+import Logo from '../assets/images/logo-rsislam.png'
 // import DropdownLink from './DropdownLink'
 
 export default function MobileNavbar() {
+
+    const [color, setColor] = useState(false)
+      const changeColor = () => {
+        if (window.scrollY >= 90){
+            setColor(true)
+        }else{
+            setColor(false)
+        }
+    }
+
+    window.addEventListener('scroll', changeColor)
+
   return (
     <Menu as={'div'} className='flex lg:hidden items-center justify-between py-2 px-4'>
-        <div className='flex px-4'>
+        <div className='flex px-4 items-center'>
             <a href="#" className="text-white font-medium mr-6"><img src={Logo} className='w-16 h-[55px]'></img></a>
+            <h1 className={color ? 'font-bold text-black text-2xl' : 'font-bold text-white text-2xl'}>RS ISLAM BOGOR</h1>
         </div>
 
         <Menu.Button className='focus:outline-none'>
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 text-white">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className={color ? 'w-6 h-6 text-black' : 'w-6 h-6 text-white'}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
             </svg>
         </Menu.Button>
