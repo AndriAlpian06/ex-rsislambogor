@@ -50,9 +50,9 @@ function Search({ details }) {
                 </div>
                 <div className="pa2">
                     <input 
-                        className="w-full text-black rounded-md py-2 px-4"
+                        className="w-full text-black rounded-md py-2 px-4 bg-white border-2 border-green-600"
                         type = "search" 
-                        placeholder = "Spesialis" 
+                        placeholder = "Cari Spesialis" 
                         onChange = {handleChange}
                     />
                 </div>

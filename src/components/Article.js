@@ -13,7 +13,7 @@ export default function () {
 
   return (
     <>
-        <div className='my-8 px-8' data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="3000">
+        <div className='my-8 px-8' data-aos="fade-up">
             <h1 className='text-2xl font-bold ml-28'>Artikel Terkini</h1>
             <Element name="test7" className="element px-4" id="containerElement" style={{
                 height: '450px',

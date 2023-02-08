@@ -29,7 +29,7 @@ function ButtonUp () {
         {backToTopButton && (
         <button style={{
         position: 'fixed',
-        bottom: '50px',
+        bottom: '70px',
         right: '35px',
         height: '50px',
         width: '50px',

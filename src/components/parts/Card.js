@@ -1,13 +1,18 @@
 import React from 'react';
 
 function Card({person}) {
+
+	// const jadwal = person.map( jadwal =>  <Card key={jadwal.idJadwal} jadwal={jadwal} />);
+
+	// console.log(jadwal);
 	return(
-		<div className="tc bg-light-green dib br3 pa3 ma2 grow bw2 shadow-5">
-			<img className="br-100 h3 w3 dib" alt={person.name} src={process.env.PUBLIC_URL + person.imgPath} />
-			<div>
-				<h2>{person.name}</h2>
-				<p>{person.day}</p>
-				<p>{person.spesialis}</p>
+		<div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+			<div className='flex items-center'>
+				<img className="w-32 h-32" alt={person.name} src={process.env.PUBLIC_URL + person.imgPath} />
+					<h2>{person.name}</h2>
+					<p>{person.day}</p>
+					<p>{person.spesialis}</p>
+					{/* <p>{person.jadwal}</p> */}
 			</div>
 		</div>
 	);
