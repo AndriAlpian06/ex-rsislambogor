@@ -5,6 +5,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Search from './parts/Search';
 import DataDokter from './parts/data/DataDokter.js'
+import { Link } from 'react-router-dom'
 
 export default function Service({ details }) {
 

@@ -39,7 +39,7 @@ const Navbar = () => {
                         <h1 className={color ? 'font-bold text-black text-2xl' : 'font-bold text-black text-2xl'}>RS ISLAM BOGOR</h1>
                     </div>
                     <div className="flex items-center gap-x-4">    
-                        <a href='#' className={color ? 'md:text-sm font-medium lg:text-tiny px-4 py-2 text-black hover:text-white hover:bg-green-700 rounded-lg' : 'md:text-sm font-medium lg:text-tiny px-4 py-2 hover:text-white hover:bg-green-700 rounded-lg'}>BERANDA</a>
+                        <Link to='/' onClick={closeMenu} className={color ? 'md:text-sm font-medium lg:text-tiny px-4 py-2 text-black hover:text-white hover:bg-green-700 rounded-lg' : 'md:text-sm font-medium lg:text-tiny px-4 py-2 hover:text-white hover:bg-green-700 rounded-lg'}>BERANDA</Link>
                         {/* <NavLink>BERANDA</NavLink> */}
                         <Menu className='relative' as={'div'}>
                             <Menu.Button className={color ? 'flex items-center gap-x-2 text-black' : 'flex items-center gap-x-2 text-black'}>

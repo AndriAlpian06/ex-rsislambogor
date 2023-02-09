@@ -1,8 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Card from './Card';
+import { Link } from 'react-router-dom'
 
 function SearchList({ filteredPersons }) {
+
   const filtered = filteredPersons.map( person =>  <Card key={person.id} person={person} />); 
+
   return (
     <div className='py-8 h-auto'>
       <div className='grid grid-cols-1 md:grid-cols-3 gap-4'>
@@ -15,6 +18,7 @@ function SearchList({ filteredPersons }) {
                   <div className="flex items-center">
                     <div className="text-white">
                     {person.name}
+                    
                     </div>
                   </div>
                 </div>
@@ -24,7 +28,20 @@ function SearchList({ filteredPersons }) {
                     {person.spesialis}
                     </div>
                   </div>
-                <button className='px-4 py-1 hover:bg-green-300 hover:text-black'>Buat Janji</button>
+                {
+
+                  filteredPersons.map((person, index) =>{
+
+                    
+                  const linkWA = `https://api.whatsapp.com/send/?phone=62895370225964&text=Halo%20RS%20ISLAM%20BOGOR%0AMohon%20info%20Dokter%20${person.name}%20Terima%20kasih`;
+                  //<Link key={person.id} to='https://api.whatsapp.com/send/?phone=62895370225964&text=Halo%20RS%20ISLAM%20BOGOR%0AMohon%20info%20Dokter%20${person.name}%20Terima%20kasih' target='_blank'><button className='px-4 py-1 hover:bg-green-300 hover:text-black'>Buat Janji</button></Link>
+                  
+                  //console.log(linkWA)
+
+                  })
+
+                }
+                <Link to={`https://api.whatsapp.com/send/?phone=62895370225964&text=Halo%20RS%20ISLAM%20BOGOR%0ASaya%20ingin%20janji%20temu%20dengan%20Dokter%20${person.name}%0ATerima%20kasih`} target='_blank'><button className='px-4 py-1 hover:bg-green-300 hover:text-black'>Buat Janji</button></Link>
                 </div>
             </div>
               
