@@ -26,12 +26,12 @@ export default function MobileNavbar() {
   return (
     <Menu as={'div'} className='flex lg:hidden items-center justify-between py-2 px-4'>
         <div className='flex px-4 items-center'>
-            <a href="#" className="text-white font-medium mr-6"><img src={Logo} className='w-16 h-[55px]'></img></a>
+            <Link to="/" onClick={closeMenu} className="text-white font-medium mr-6"><img src={Logo} className='w-16 h-[55px]'></img></Link>
             <h1 className={color ? 'font-bold text-black text-2xl' : 'font-bold text-white text-2xl'}>RS ISLAM BOGOR</h1>
         </div>
 
         <Menu.Button className='focus:outline-none'>
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className={color ? 'w-6 h-6 text-black' : 'w-6 h-6 text-white'}>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className={color ? 'w-6 h-6 text-black' : 'w-6 h-6 text-black'}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
             </svg>
         </Menu.Button>
@@ -47,7 +47,7 @@ export default function MobileNavbar() {
         >
           <Menu.Items as={'div'} className='shadow-sm border bg-white absolute right-0 mr-12 top-0 mt-8 py-1 rounded-lg w-56 overflow-hidden'>
 
-            <a href="#" className="px-4 py-2 text-sm hover:bg-gray-100 text-gray-700 hover:text-black block">BERANDA</a>
+            <Link to="/" onClick={closeMenu} className="px-4 py-2 text-sm hover:bg-gray-100 text-gray-700 hover:text-black block">BERANDA</Link>
             <Line />
             <Menu className='relative ml-4' as={'div'}>
                 <Menu.Button className='flex text-black items-center gap-x-2'>

@@ -1,5 +1,6 @@
 import React from 'react'
 import Navbar from '../Navbar'
+import SecondNavbar from '../SecondNavbar'
 import SideBar from '../SideBar'
 import BackToUp from '../BackToUp'
 import Footer from '../Footer'
@@ -9,12 +10,17 @@ import App from '../../App.css';
 export default function JadwalDokter() {
   return (
     <div>
-        <Navbar className='bg-green-600' />
+        {/* <Navbar className='bg-green-600' /> */}
+        <SecondNavbar />
         <SideBar />        
-        <div class="relative overflow-x-auto px-32 py-4 top-32">
-            <h1 className='font-bold text-2xl py-4'>JADWAL PRAKTEK DOKTER RS. ISLAM BOGOR</h1>
+        <div class="static overflow-x-auto px-32 py-4 top-32">
             <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
                 <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400 px-4">
+                    <tr>
+                        <th scope="col" class="px-6 py-3 border-2 border-white border-b-white" colSpan="7">
+                            JADWAL PRAKTEK DOKTER RS ISLAM BOGOR
+                        </th>
+                    </tr>
                     <tr>
                         <th scope="col" class="px-6 py-3">
                             NAMA DOKTER
