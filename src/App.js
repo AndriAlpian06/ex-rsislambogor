@@ -1,27 +1,17 @@
 import './App.css';
-import Article from './components/Article';
-import Footer from './components/Footer';
-import Hero from './components/Hero';
-import Navbar from './components/Navbar';
-import Notice from './components/Notice';
-import Service from './components/Service';
-import ServiceOnline from './components/ServiceOnline';
-import BackToUp from './components/BackToUp';
-import SideBar from './components/SideBar'
+import Beranda from './components/pages/Beranda'
+import JadwalDokter from './components/pages/JadwalDokter'
+
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
-    <>
-      <Navbar />
-      <Hero />
-      <SideBar />
-      <Service />
-      <Notice />
-      <Article />
-      <ServiceOnline />
-      <BackToUp />
-      <Footer />
-    </>
+    <Router>
+      <Routes>
+        <Route exact path='/' element={<Beranda />}></Route>
+        <Route path='JadwalDokter' element={<JadwalDokter />}></Route>
+      </Routes>
+    </Router>
   );
 }
 

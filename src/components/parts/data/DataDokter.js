@@ -16,7 +16,7 @@ const DataDokter = [
     {
       id: 2,
       imgPath: "https://images.pexels.com/photos/4173239/pexels-photo-4173239.jpeg",
-      name: "Dr H Widiajanto SP. B",
+      name: "Dr H Widjajanto SP. B",
       email: "agra@rosie.com",
       address: "Tbilisi, India",
       spesialis: "Spesialis Bedah",
@@ -31,8 +31,8 @@ const DataDokter = [
     },
     {
       id: 3,
-      imgPath: "https://images.pexels.com/photos/4173251/pexels-photo-4173251.jpeg",
-      name: "Dr. Sofya Wijaya SP. B",
+      imgPath: "https://images.pexels.com/photos/5867737/pexels-photo-5867737.jpeg",
+      name: "Dr. Solya Wijaya SP. B",
       email: "irene@johnlock.com",
       address: "Baker Street, India",
       spesialis: "Spesialis Bedah",
@@ -59,22 +59,6 @@ const DataDokter = [
         { day: 'kamis', jam: '17:00 - selesai' },
         { day: 'jumat', jam: '17:00 - selesai' },
         { day: 'sabtu', jam: '15:00 - selesai' }
-      ],
-    },
-    {
-      id: 5,
-      imgPath: "https://images.pexels.com/photos/5867737/pexels-photo-5867737.jpeg",
-      name: "Dr. H. Trihadji, Sp. B",
-      email: "britishgovt@gmail.com",
-      address: "London, India",
-      spesialis: "Spesialis Bedah Syarat",
-      jadwal: [
-        { day: 'senin', jam: 'Hanya pasien rawat inap' },
-        { day: 'selasa', jam: 'Hanya pasien rawat inap' },
-        { day: 'rabu', jam: 'Hanya pasien rawat inap' },
-        { day: 'kamis', jam: 'Hanya pasien rawat inap' },
-        { day: 'jumat', jam: 'Hanya pasien rawat inap' },
-        { day: 'sabtu', jam: 'Hanya pasien rawat inap' }
       ],
     },
     {
@@ -144,7 +128,7 @@ const DataDokter = [
     
     {
       id: 10,
-      imgPath: "https://images.pexels.com/photos/5452268/pexels-photo-5452268.jpeg",
+      imgPath: "https://images.pexels.com/photos/4173251/pexels-photo-4173251.jpeg",
       name: "Dr. Andi Indriaty Syaiful Sp. A",
       email: "janedoe@gmail.com",
       address: "tokyo, Jepang",
